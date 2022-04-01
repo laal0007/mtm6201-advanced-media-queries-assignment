@@ -166,3 +166,90 @@ nav a:focus {
   background-color: #968DFF;
   color: white;
 }
+
+/* Mobile - 480px */
+.sm {
+  display: flex;
+  flex-direction: row;
+  margin: 10px;
+  justify-content: center;
+}
+
+.sm a {
+  margin: 10px;
+}
+
+li {
+  margin: 10px;
+  justify-content: center;
+  text-align: center;
+}
+
+
+nav {
+  margin: 0 auto;
+}
+
+#grayfont li a {
+  color: #646464;
+}
+
+/* Tablet - 700px */
+@media screen and (min-width: 43.75em) {
+  #grayfont {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 10px;
+  }
+
+}
+
+/* Desktop - 1000px */
+@media screen and (min-width: 62.5em) {
+  /* #grayfont{
+  display:grid;
+grid-template-columns: repeat(4, 1fr);
+} */
+
+  #grayfont {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  #grayfont li {
+    width: 20%;
+  }
+
+  .sm {
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    flex-wrap: wrap;
+    width: 200px;
+    float: right;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+
+  /* Styles */
+  body {
+    background-color: #E0FF8D;
+    color: white;
+  }
+
+  #grayfont li a {
+    color: white;
+  }
+
+  nav a,
+  nav a:link,
+  nav a:visited {
+    background-color: #968DFF;
+  }
+
+  .sm i {
+    color: white;
+  }
+}
